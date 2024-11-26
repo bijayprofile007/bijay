@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professor Profile - Home</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
         nav {
             background-color: #f4f4f4;
             padding: 10px;
@@ -19,13 +25,44 @@
         nav a:hover {
             color: #007BFF;
         }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .profile-info {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .profile-photo {
+            text-align: right;
+        }
+        .profile-photo img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 2px solid #007BFF;
+        }
         h1 {
             text-align: center;
-            margin-top: 50px;
+            margin-top: 10px;
         }
         p {
             text-align: center;
             font-size: 1.2em;
+        }
+        .intro {
+            font-size: 1em;
+            margin: 10px 0;
+        }
+        .personal-info {
+            margin-top: 10px;
+        }
+        .personal-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        .personal-info li {
+            margin: 5px 0;
         }
     </style>
 </head>
@@ -37,6 +74,26 @@
         <a href="projects.html">Projects</a>
         <a href="contact.html">Contact Us</a>
     </nav>
+    <div class="container">
+        <!-- Left Section: Basic Information -->
+        <div class="profile-info">
+            <h2>Dr. John Doe</h2>
+            <p class="intro">Professor of Computer Science at XYZ University. With over 20 years of teaching experience, Dr. Doe specializes in Artificial Intelligence, Machine Learning, and Data Science.</p>
+            <div class="personal-info">
+                <ul>
+                    <li><strong>Position:</strong> Professor</li>
+                    <li><strong>Department:</strong> Computer Science</li>
+                    <li><strong>Email:</strong> johndoe@xyz.edu</li>
+                    <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right Section: Profile Photo -->
+        <div class="profile-photo">
+            <img src="profile-photo.jpg" alt="Professor John Doe">
+        </div>
+    </div>
     <h1>Welcome to Professor's Profile</h1>
     <p>This is the home page. Learn more about teaching, research, projects, and get in touch with the professor.</p>
 </body>
