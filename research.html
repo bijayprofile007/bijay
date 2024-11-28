@@ -4,7 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professor Profile - Research</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .paper-title {
+            font-weight: bold;
+        }
+        .authors {
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -14,7 +59,61 @@
         <a href="projects.html">Projects</a>
         <a href="contact.html">Contact Us</a>
     </nav>
-    <h1>Research</h1>
-    <p>Information about the professor's research interests and publications.</p>
+
+    <div class="container">
+        <h1>Research Papers</h1>
+        <p>Explore the published research papers by Dr. John Doe across various domains.</p>
+
+        <!-- Conferences Section -->
+        <section>
+            <h2>Conference Papers</h2>
+            <ul>
+                <li>
+                    <span class="paper-title">"A Novel Approach to Machine Learning"</span><br>
+                    <span class="authors">John Doe, Jane Smith, and Alan Turing</span><br>
+                    Presented at: *International Conference on Artificial Intelligence*, 2022.
+                </li>
+                <li>
+                    <span class="paper-title">"Deep Learning for Computer Vision"</span><br>
+                    <span class="authors">John Doe and Emily Watson</span><br>
+                    Presented at: *CVPR*, 2021.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Journals Section -->
+        <section>
+            <h2>Journal Papers</h2>
+            <ul>
+                <li>
+                    <span class="paper-title">"Advances in Neural Networks"</span><br>
+                    <span class="authors">John Doe and Michael Clark</span><br>
+                    Published in: *Journal of Machine Learning Research*, Vol. 35, 2023.
+                </li>
+                <li>
+                    <span class="paper-title">"Optimization Techniques in AI"</span><br>
+                    <span class="authors">John Doe</span><br>
+                    Published in: *IEEE Transactions on Neural Networks*, Vol. 12, 2020.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Transactions Section -->
+        <section>
+            <h2>Transactions</h2>
+            <ul>
+                <li>
+                    <span class="paper-title">"Secure Data Sharing in IoT"</span><br>
+                    <span class="authors">John Doe and Sarah Johnson</span><br>
+                    Published in: *ACM Transactions on Cyber-Physical Systems*, 2021.
+                </li>
+                <li>
+                    <span class="paper-title">"Blockchain for AI Systems"</span><br>
+                    <span class="authors">John Doe, Lisa Wong, and Tom Hardy</span><br>
+                    Published in: *IEEE Transactions on Blockchain Technology*, 2022.
+                </li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
